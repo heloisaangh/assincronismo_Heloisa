@@ -1,4 +1,4 @@
-async function Estudar() {
+function Estudar() {
   return new Promisse (function (resolve, reject, num=3){
     if (estudarBio === true){
       resolve ("Matéria de Biologia estudada");
@@ -8,7 +8,7 @@ async function Estudar() {
 console.log("estudar novamente");,1000);
 }
 
-async function comer() {
+function comer() {
   return new Promisse (function (resolve, reject, num=3){
     if (comeuMaça === true){
       resolve ("Comeu saudável");
@@ -18,7 +18,7 @@ async function comer() {
   setTimeout(function(){
 console.log("Selecionar Alimentos");},1000);
 }
-async function escrever() {
+function escrever() {
   return new Promisse (function (resolve, reject, num=3){
     if (escreveuredaao === true){
       resolve ("Fez a redação");
